@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0C8AF825F15BFA00617621 /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0C8AF725F15BFA00617621 /* BigBang.json */; };
+		CF0C8AFB25F161C400617621 /* ModelBigBang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8AFA25F161C400617621 /* ModelBigBang.swift */; };
+		CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */; };
+		CF0C8B0925F169CE00617621 /* DetalleEpisodioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */; };
 		CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646125F038CA008107E5 /* AppDelegate.swift */; };
 		CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646325F038CA008107E5 /* SceneDelegate.swift */; };
-		CFAE646625F038CA008107E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646525F038CA008107E5 /* ViewController.swift */; };
 		CFAE646925F038CA008107E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646725F038CA008107E5 /* Main.storyboard */; };
 		CFAE646B25F038CB008107E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646A25F038CB008107E5 /* Assets.xcassets */; };
 		CFAE646E25F038CB008107E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */; };
+		CFAE647725F03CB4008107E5 /* EpisodiosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0C8AF725F15BFA00617621 /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
+		CF0C8AFA25F161C400617621 /* ModelBigBang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBigBang.swift; sourceTree = "<group>"; };
+		CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
+		CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEpisodioTableViewController.swift; sourceTree = "<group>"; };
 		CFAE645E25F038CA008107E5 /* BigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAE646125F038CA008107E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFAE646325F038CA008107E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFAE646525F038CA008107E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFAE646825F038CA008107E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFAE646A25F038CB008107E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFAE646D25F038CB008107E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAE646F25F038CB008107E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0C8AFD25F161C900617621 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF0C8AFA25F161C400617621 /* ModelBigBang.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF0C8B0025F165D600617621 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */,
+				CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */,
+				CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF0C8B0225F165E300617621 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE646725F038CA008107E5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CFAE645525F038CA008107E5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +92,11 @@
 			children = (
 				CFAE646125F038CA008107E5 /* AppDelegate.swift */,
 				CFAE646325F038CA008107E5 /* SceneDelegate.swift */,
-				CFAE646525F038CA008107E5 /* ViewController.swift */,
-				CFAE646725F038CA008107E5 /* Main.storyboard */,
+				CF0C8AFD25F161C900617621 /* Model */,
+				CF0C8B0225F165E300617621 /* View */,
+				CF0C8B0025F165D600617621 /* Controller */,
 				CFAE646A25F038CB008107E5 /* Assets.xcassets */,
+				CF0C8AF725F15BFA00617621 /* BigBang.json */,
 				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
 				CFAE646F25F038CB008107E5 /* Info.plist */,
 			);
@@ -126,6 +162,7 @@
 			files = (
 				CFAE646E25F038CB008107E5 /* LaunchScreen.storyboard in Resources */,
 				CFAE646B25F038CB008107E5 /* Assets.xcassets in Resources */,
+				CF0C8AF825F15BFA00617621 /* BigBang.json in Resources */,
 				CFAE646925F038CA008107E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAE646625F038CA008107E5 /* ViewController.swift in Sources */,
+				CF0C8AFB25F161C400617621 /* ModelBigBang.swift in Sources */,
+				CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */,
+				CFAE647725F03CB4008107E5 /* EpisodiosTableViewController.swift in Sources */,
 				CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */,
 				CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */,
+				CF0C8B0925F169CE00617621 /* DetalleEpisodioTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9L3PPN38N6;
 				INFOPLIST_FILE = BigBangTheory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9L3PPN38N6;
 				INFOPLIST_FILE = BigBangTheory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
