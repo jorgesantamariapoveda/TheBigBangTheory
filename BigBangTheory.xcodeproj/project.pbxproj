@@ -53,22 +53,45 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CF0C8B0025F165D600617621 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */,
-				CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */,
-				CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		CF0C8B0225F165E300617621 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CFAE646725F038CA008107E5 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CF34BC3425F207110078A3E2 /* Episodios */ = {
+			isa = PBXGroup;
+			children = (
+				CF34BC3725F207270078A3E2 /* Controller */,
+			);
+			path = Episodios;
+			sourceTree = "<group>";
+		};
+		CF34BC3625F2071B0078A3E2 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				CF34BC3825F207300078A3E2 /* Controller */,
+			);
+			path = Favoritos;
+			sourceTree = "<group>";
+		};
+		CF34BC3725F207270078A3E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */,
+				CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF34BC3825F207300078A3E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CFAE645525F038CA008107E5 = {
@@ -94,7 +117,8 @@
 				CFAE646325F038CA008107E5 /* SceneDelegate.swift */,
 				CF0C8AFD25F161C900617621 /* Model */,
 				CF0C8B0225F165E300617621 /* View */,
-				CF0C8B0025F165D600617621 /* Controller */,
+				CF34BC3425F207110078A3E2 /* Episodios */,
+				CF34BC3625F2071B0078A3E2 /* Favoritos */,
 				CFAE646A25F038CB008107E5 /* Assets.xcassets */,
 				CF0C8AF725F15BFA00617621 /* BigBang.json */,
 				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
