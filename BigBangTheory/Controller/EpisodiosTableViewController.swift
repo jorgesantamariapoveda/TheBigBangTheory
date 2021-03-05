@@ -9,6 +9,8 @@ import UIKit
 
 class EpisodiosTableViewController: UITableViewController {
 
+    var model = BigBangModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,23 +20,23 @@ class EpisodiosTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return model.numSeasons
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return model.numEpisodesBySeason(season: section + 1)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaEpisodio", for: indexPath)
 
-        cell.textLabel?.text = "hola"
+        cell.textLabel?.text = model.nameEpisode(season: indexPath.section + 1, episode: indexPath.row + 1)
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "Sección"
+        "Season \(section + 1)"
     }
 
     /*

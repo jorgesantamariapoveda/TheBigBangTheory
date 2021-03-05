@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF0C8AF825F15BFA00617621 /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0C8AF725F15BFA00617621 /* BigBang.json */; };
-		CF0C8AFB25F161C400617621 /* ModelBigBang.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8AFA25F161C400617621 /* ModelBigBang.swift */; };
+		CF0C8AFB25F161C400617621 /* BigBangModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8AFA25F161C400617621 /* BigBangModel.swift */; };
 		CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */; };
 		CF0C8B0925F169CE00617621 /* DetalleEpisodioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */; };
 		CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646125F038CA008107E5 /* AppDelegate.swift */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		CF0C8AF725F15BFA00617621 /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
-		CF0C8AFA25F161C400617621 /* ModelBigBang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBigBang.swift; sourceTree = "<group>"; };
+		CF0C8AFA25F161C400617621 /* BigBangModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangModel.swift; sourceTree = "<group>"; };
 		CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
 		CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEpisodioTableViewController.swift; sourceTree = "<group>"; };
 		CFAE645E25F038CA008107E5 /* BigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +48,7 @@
 		CF0C8AFD25F161C900617621 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CF0C8AFA25F161C400617621 /* ModelBigBang.swift */,
+				CF0C8AFA25F161C400617621 /* BigBangModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF0C8AFB25F161C400617621 /* ModelBigBang.swift in Sources */,
+				CF0C8AFB25F161C400617621 /* BigBangModel.swift in Sources */,
 				CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */,
 				CFAE647725F03CB4008107E5 /* EpisodiosTableViewController.swift in Sources */,
 				CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */,
