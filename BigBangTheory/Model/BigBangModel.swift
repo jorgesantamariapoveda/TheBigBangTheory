@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - API response
+
 struct BigBang: Codable {
     let _embedded: Embedded
 }
