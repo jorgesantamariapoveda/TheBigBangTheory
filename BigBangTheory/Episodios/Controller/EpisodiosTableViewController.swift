@@ -20,16 +20,16 @@ final class EpisodiosTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        model.numSeasons
+        model.getNumSeasons()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.numEpisodesBySeason(season: section + 1)
+        model.getNumEpisodesBySeason(season: section + 1)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaEpisodio", for: indexPath)
-        cell.textLabel?.text = model.nameEpisode(season: indexPath.section + 1, episode: indexPath.row + 1)
+        cell.textLabel?.text = model.getNameEpisode(season: indexPath.section + 1, episode: indexPath.row + 1)
         return cell
     }
 

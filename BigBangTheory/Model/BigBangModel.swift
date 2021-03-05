@@ -26,24 +26,15 @@ struct Episode: Codable {
 }
 
 struct Image: Codable {
-    let medium: String
+    let medium: URL
 }
 
 // MARK: - Model
 
 struct BigBangModel {
 
-    var episodes: [Episode]
-
-    lazy var numSeasons:Int = {
-        var seasons = [Int]()
-        episodes.forEach { (episode) in
-            if seasons.firstIndex(of: episode.season) == nil {
-                seasons.append(episode.season)
-            }
-        }
-        return seasons.count
-    }()
+    private var episodes: [Episode]
+    private var numSeasons: Int?
 
     init() {
         guard let ruta = Bundle.main.url(forResource: "BigBang", withExtension: "json") else {
@@ -60,11 +51,26 @@ struct BigBangModel {
         }
     }
 
-    func numEpisodesBySeason(season: Int) -> Int {
+    mutating func getNumSeasons() -> Int {
+        if let numSeasons = numSeasons {
+            return numSeasons
+        } else {
+            var seasons = [Int]()
+            episodes.forEach { (episode) in
+                if seasons.firstIndex(of: episode.season) == nil {
+                    seasons.append(episode.season)
+                }
+            }
+            numSeasons = seasons.count
+            return seasons.count
+        }
+    }
+
+    func getNumEpisodesBySeason(season: Int) -> Int {
         episodes.filter { $0.season == season }.count
     }
 
-    func nameEpisode(season: Int, episode: Int) -> String {
+    func getNameEpisode(season: Int, episode: Int) -> String {
         if let episode = getEpisode(season: season, episode: episode) {
             return episode.name
         }
