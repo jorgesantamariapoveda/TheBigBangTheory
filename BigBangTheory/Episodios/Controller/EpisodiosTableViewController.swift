@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EpisodiosTableViewController: UITableViewController {
+final class EpisodiosTableViewController: UITableViewController {
 
     var model = BigBangModel()
 
@@ -59,14 +59,13 @@ class EpisodiosTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let detailVC = segue.destination as? DetalleEpisodioTableViewController,
+           let indexPath = tableView.indexPathForSelectedRow,
+           let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) {
+            detailVC.episode = episode
+        }
     }
-    */
-
 }

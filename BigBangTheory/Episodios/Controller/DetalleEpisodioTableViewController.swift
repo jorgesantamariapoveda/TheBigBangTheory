@@ -7,16 +7,14 @@
 
 import UIKit
 
-class DetalleEpisodioTableViewController: UITableViewController {
+final class DetalleEpisodioTableViewController: UITableViewController {
+
+    var episode: Episode?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        title = episode?.name
     }
 
     // MARK: - Table view data source

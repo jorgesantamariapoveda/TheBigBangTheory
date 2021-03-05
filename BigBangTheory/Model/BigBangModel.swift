@@ -64,11 +64,18 @@ struct BigBangModel {
     }
 
     func nameEpisode(season: Int, episode: Int) -> String {
-        let episode = episodes.filter { $0.season == season && $0.number == episode }
-        if let episode = episode.first {
+        if let episode = getEpisode(season: season, episode: episode) {
             return episode.name
         }
         return ""
+    }
+
+    func getEpisode(season: Int, episode: Int) -> Episode? {
+        let episode = episodes.filter { $0.season == season && $0.number == episode }
+        if let episode = episode.first {
+            return episode
+        }
+        return nil
     }
 
 }
