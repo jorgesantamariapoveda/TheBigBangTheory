@@ -22,7 +22,9 @@ struct Episode: Codable {
     let name: String
     let season: Int
     let number: Int
+    let airdate: String
     let image: Image
+    let summary: String
 }
 
 struct Image: Codable {

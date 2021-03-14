@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CF0C8AF825F15BFA00617621 /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0C8AF725F15BFA00617621 /* BigBang.json */; };
 		CF0C8AFB25F161C400617621 /* BigBangModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8AFA25F161C400617621 /* BigBangModel.swift */; };
-		CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */; };
-		CF0C8B0925F169CE00617621 /* DetalleEpisodioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */; };
+		CF0C8B0525F1663500617621 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0425F1663500617621 /* FavoritesTableViewController.swift */; };
+		CF0C8B0925F169CE00617621 /* DetailEpisodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0825F169CE00617621 /* DetailEpisodeTableViewController.swift */; };
+		CF38444825FE2924003E2F18 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38444725FE2924003E2F18 /* Network.swift */; };
 		CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646125F038CA008107E5 /* AppDelegate.swift */; };
 		CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646325F038CA008107E5 /* SceneDelegate.swift */; };
 		CFAE646925F038CA008107E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646725F038CA008107E5 /* Main.storyboard */; };
 		CFAE646B25F038CB008107E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646A25F038CB008107E5 /* Assets.xcassets */; };
 		CFAE646E25F038CB008107E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */; };
-		CFAE647725F03CB4008107E5 /* EpisodiosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */; };
+		CFAE647725F03CB4008107E5 /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE647625F03CB4008107E5 /* EpisodesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF0C8AF725F15BFA00617621 /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
 		CF0C8AFA25F161C400617621 /* BigBangModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangModel.swift; sourceTree = "<group>"; };
-		CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
-		CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEpisodioTableViewController.swift; sourceTree = "<group>"; };
+		CF0C8B0425F1663500617621 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		CF0C8B0825F169CE00617621 /* DetailEpisodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEpisodeTableViewController.swift; sourceTree = "<group>"; };
+		CF38444725FE2924003E2F18 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CFAE645E25F038CA008107E5 /* BigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAE646125F038CA008107E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFAE646325F038CA008107E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		CFAE646A25F038CB008107E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFAE646D25F038CB008107E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAE646F25F038CB008107E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiosTableViewController.swift; sourceTree = "<group>"; };
+		CFAE647625F03CB4008107E5 /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,8 @@
 		CF0C8B0225F165E300617621 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
 				CFAE646725F038CA008107E5 /* Main.storyboard */,
+				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,8 +85,8 @@
 		CF38443D25FE0CC2003E2F18 /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
-				CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */,
-				CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */,
+				CFAE647625F03CB4008107E5 /* EpisodesTableViewController.swift */,
+				CF0C8B0825F169CE00617621 /* DetailEpisodeTableViewController.swift */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -92,9 +94,17 @@
 		CF38443E25FE0CFA003E2F18 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */,
+				CF0C8B0425F1663500617621 /* FavoritesTableViewController.swift */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		CF38444A25FE2934003E2F18 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CF38444725FE2924003E2F18 /* Network.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		CFAE645525F038CA008107E5 = {
@@ -120,6 +130,7 @@
 				CF0C8AFD25F161C900617621 /* Model */,
 				CF0C8B0225F165E300617621 /* Views */,
 				CF38443C25FE0CAA003E2F18 /* Controllers */,
+				CF38444A25FE2934003E2F18 /* Util */,
 				CFAE646A25F038CB008107E5 /* Assets.xcassets */,
 				CF0C8AF725F15BFA00617621 /* BigBang.json */,
 				CFAE646F25F038CB008107E5 /* Info.plist */,
@@ -199,11 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0C8AFB25F161C400617621 /* BigBangModel.swift in Sources */,
-				CF0C8B0525F1663500617621 /* FavoritosTableViewController.swift in Sources */,
-				CFAE647725F03CB4008107E5 /* EpisodiosTableViewController.swift in Sources */,
+				CF0C8B0525F1663500617621 /* FavoritesTableViewController.swift in Sources */,
+				CFAE647725F03CB4008107E5 /* EpisodesTableViewController.swift in Sources */,
 				CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */,
 				CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */,
-				CF0C8B0925F169CE00617621 /* DetalleEpisodioTableViewController.swift in Sources */,
+				CF38444825FE2924003E2F18 /* Network.swift in Sources */,
+				CF0C8B0925F169CE00617621 /* DetailEpisodeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

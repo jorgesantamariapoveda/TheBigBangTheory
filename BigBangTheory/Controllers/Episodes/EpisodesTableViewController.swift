@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class EpisodiosTableViewController: UITableViewController {
+final class EpisodesTableViewController: UITableViewController {
 
     var model = BigBangModel()
 
@@ -29,19 +29,22 @@ final class EpisodiosTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellEpisode", for: indexPath)
-        cell.textLabel?.text = model.getNameEpisode(season: indexPath.section + 1, episode: indexPath.row + 1)
+        if let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) {
+            cell.textLabel?.text = episode.name
+            cell.detailTextLabel?.text = "Airdate: \(episode.airdate)"
+        }
         return cell
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "Temporada \(section + 1)"
+        "Season \(section + 1)"
     }
 
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailEpisode" {
-            if let detailVC = segue.destination as? DetalleEpisodioTableViewController,
+            if let detailVC = segue.destination as? DetailEpisodeTableViewController,
                let indexPath = tableView.indexPathForSelectedRow,
                let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) {
                 detailVC.episode = episode
