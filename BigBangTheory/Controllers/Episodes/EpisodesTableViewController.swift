@@ -7,14 +7,16 @@
 
 import UIKit
 
-final class EpisodesTableViewController: UITableViewController {
+var model = BigBangModel()
 
-    var model = BigBangModel()
+final class EpisodesTableViewController: UITableViewController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.clearsSelectionOnViewWillAppear = false
+
+        tabBarController?.delegate = self
     }
 
     // MARK: - Table view data source
@@ -40,6 +42,28 @@ final class EpisodesTableViewController: UITableViewController {
         "Season \(section + 1)"
     }
 
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) else {
+            return nil
+        }
+
+        let actionFavorite = UIContextualAction(style: .normal, title: "Favorite") { action, view, handler in
+            model.toogleEpisodeFavorite(id: episode.id)
+            handler(true)
+        }
+
+        if model.isEpisodeFavorite(id: episode.id) {
+            actionFavorite.image = UIImage(systemName: "heart")
+            actionFavorite.backgroundColor = .red
+        } else {
+            actionFavorite.image = UIImage(systemName: "heart.fill")
+            actionFavorite.backgroundColor = .blue
+        }
+
+        let configuration = UISwipeActionsConfiguration(actions: [actionFavorite])
+        return configuration
+    }
+
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,5 +74,15 @@ final class EpisodesTableViewController: UITableViewController {
                 detailVC.episode = episode
             }
         }
+    }
+
+    // MARK: - UITabBarControllerDelegate
+
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if let navigation = viewController as? UINavigationController,
+           let top = navigation.topViewController as? FavoritesTableViewController {
+            top.refreshData()
+        }
+
     }
 }

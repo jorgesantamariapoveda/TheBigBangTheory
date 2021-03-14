@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="2186.1538461538462" y="-493.3649289099526"/>
         </scene>
-        <!--Favoritos-->
+        <!--Favorites-->
         <scene sceneID="dfO-r5-acC">
             <objects>
                 <tableViewController id="ro3-CQ-mbR" customClass="FavoritesTableViewController" customModule="BigBangTheory" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,7 +249,7 @@
                             <outlet property="delegate" destination="ro3-CQ-mbR" id="SJI-Fi-AuX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favoritos" id="hbd-Uc-lyG"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="hbd-Uc-lyG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXK-SP-hnn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
