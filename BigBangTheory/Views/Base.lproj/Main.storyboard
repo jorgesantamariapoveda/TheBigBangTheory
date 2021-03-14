@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--The Big Bang Theory-->
+        <!--the BiG BANG THEORY-->
         <scene sceneID="N0n-7q-C0G">
             <objects>
                 <tableViewController id="eII-ds-DkJ" customClass="EpisodiosTableViewController" customModule="BigBangTheory" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaEpisodio" textLabel="OwG-Ao-WMI" style="IBUITableViewCellStyleDefault" id="9y8-rG-qbK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellEpisode" textLabel="OwG-Ao-WMI" style="IBUITableViewCellStyleDefault" id="9y8-rG-qbK">
                                 <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9y8-rG-qbK" id="lYR-7x-XpL">
@@ -32,7 +32,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tlT-yl-JmH" kind="show" identifier="detalleEpisodio" id="mDT-h8-hSB"/>
+                                    <segue destination="tlT-yl-JmH" kind="show" id="WxB-xd-08b"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -41,7 +41,7 @@
                             <outlet property="delegate" destination="eII-ds-DkJ" id="rf4-pz-faf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="The Big Bang Theory" id="tIa-EI-2Pc"/>
+                    <navigationItem key="navigationItem" title="the BiG BANG THEORY" id="tIa-EI-2Pc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlz-T1-0Cy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,20 +51,40 @@
         <scene sceneID="g1U-fb-kiT">
             <objects>
                 <tableViewController id="tlT-yl-JmH" customClass="DetalleEpisodioTableViewController" customModule="BigBangTheory" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RkO-bh-Mnd">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RkO-bh-Mnd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaDetalle" id="qE7-PY-Yol">
-                                <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qE7-PY-Yol" id="mhi-3o-ffW">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="uLv-1O-ncn">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qE7-PY-Yol">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qE7-PY-Yol" id="mhi-3o-ffW">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zFa-hp-7qx">
+                                        <rect key="frame" x="0.0" y="71.666667938232422" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zFa-hp-7qx" id="T5S-Cy-qWx">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HIK-9n-yyz">
+                                        <rect key="frame" x="0.0" y="115.33333587646484" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HIK-9n-yyz" id="pzL-rT-9tf">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="tlT-yl-JmH" id="vyN-jU-XpO"/>
                             <outlet property="delegate" destination="tlT-yl-JmH" id="w7l-7S-p1f"/>
@@ -85,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaFavorito" textLabel="HPr-jF-C2x" style="IBUITableViewCellStyleDefault" id="pf2-xz-sTO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellFavorite" textLabel="HPr-jF-C2x" style="IBUITableViewCellStyleDefault" id="pf2-xz-sTO">
                                 <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pf2-xz-sTO" id="FpI-GD-Ize">
@@ -114,11 +134,11 @@
             </objects>
             <point key="canvasLocation" x="1228" y="314"/>
         </scene>
-        <!--Episodios-->
+        <!--Episodes-->
         <scene sceneID="tJl-3S-XI2">
             <objects>
                 <navigationController id="eay-HR-vOC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Episodios" image="film" catalog="system" selectedImage="film.fill" id="VJd-jg-xFe"/>
+                    <tabBarItem key="tabBarItem" title="Episodes" image="film" catalog="system" selectedImage="film.fill" id="VJd-jg-xFe"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iLn-9u-jIz">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -131,11 +151,11 @@
             </objects>
             <point key="canvasLocation" x="312" y="-494"/>
         </scene>
-        <!--Favoritos-->
+        <!--Favorites-->
         <scene sceneID="QXe-3o-5DZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oWu-N6-uoT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" selectedImage="heart.fill" id="c7F-vS-lHx"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart.fill" id="c7F-vS-lHx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nym-Wf-tQj">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>

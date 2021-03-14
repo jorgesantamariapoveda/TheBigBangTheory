@@ -53,45 +53,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CF0C8B0225F165E300617621 /* View */ = {
+		CF0C8B0225F165E300617621 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
 				CFAE646725F038CA008107E5 /* Main.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		CF34BC3425F207110078A3E2 /* Episodios */ = {
+		CF38443925FE0B6E003E2F18 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CF34BC3725F207270078A3E2 /* Controller */,
+				CFAE646125F038CA008107E5 /* AppDelegate.swift */,
+				CFAE646325F038CA008107E5 /* SceneDelegate.swift */,
 			);
-			path = Episodios;
+			path = App;
 			sourceTree = "<group>";
 		};
-		CF34BC3625F2071B0078A3E2 /* Favoritos */ = {
+		CF38443C25FE0CAA003E2F18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CF34BC3825F207300078A3E2 /* Controller */,
+				CF38443D25FE0CC2003E2F18 /* Episodes */,
+				CF38443E25FE0CFA003E2F18 /* Favorites */,
 			);
-			path = Favoritos;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		CF34BC3725F207270078A3E2 /* Controller */ = {
+		CF38443D25FE0CC2003E2F18 /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
 				CFAE647625F03CB4008107E5 /* EpisodiosTableViewController.swift */,
 				CF0C8B0825F169CE00617621 /* DetalleEpisodioTableViewController.swift */,
 			);
-			path = Controller;
+			path = Episodes;
 			sourceTree = "<group>";
 		};
-		CF34BC3825F207300078A3E2 /* Controller */ = {
+		CF38443E25FE0CFA003E2F18 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 				CF0C8B0425F1663500617621 /* FavoritosTableViewController.swift */,
 			);
-			path = Controller;
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		CFAE645525F038CA008107E5 = {
@@ -113,15 +116,12 @@
 		CFAE646025F038CA008107E5 /* BigBangTheory */ = {
 			isa = PBXGroup;
 			children = (
-				CFAE646125F038CA008107E5 /* AppDelegate.swift */,
-				CFAE646325F038CA008107E5 /* SceneDelegate.swift */,
+				CF38443925FE0B6E003E2F18 /* App */,
 				CF0C8AFD25F161C900617621 /* Model */,
-				CF0C8B0225F165E300617621 /* View */,
-				CF34BC3425F207110078A3E2 /* Episodios */,
-				CF34BC3625F2071B0078A3E2 /* Favoritos */,
+				CF0C8B0225F165E300617621 /* Views */,
+				CF38443C25FE0CAA003E2F18 /* Controllers */,
 				CFAE646A25F038CB008107E5 /* Assets.xcassets */,
 				CF0C8AF725F15BFA00617621 /* BigBang.json */,
-				CFAE646C25F038CB008107E5 /* LaunchScreen.storyboard */,
 				CFAE646F25F038CB008107E5 /* Info.plist */,
 			);
 			path = BigBangTheory;

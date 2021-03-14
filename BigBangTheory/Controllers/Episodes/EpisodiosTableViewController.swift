@@ -28,7 +28,7 @@ final class EpisodiosTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaEpisodio", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellEpisode", for: indexPath)
         cell.textLabel?.text = model.getNameEpisode(season: indexPath.section + 1, episode: indexPath.row + 1)
         return cell
     }
@@ -40,7 +40,7 @@ final class EpisodiosTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detalleEpisodio" {
+        if segue.identifier == "detailEpisode" {
             if let detailVC = segue.destination as? DetalleEpisodioTableViewController,
                let indexPath = tableView.indexPathForSelectedRow,
                let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) {
