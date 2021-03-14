@@ -38,11 +38,20 @@ final class DetailEpisodeTableViewController: UITableViewController {
             .replacingOccurrences(of: "</p>", with: "")
         avatar.isHidden = true
 
-        getImageNetwork(url: episode.image.medium) { [weak self] image in
-            self?.avatar.layer.cornerRadius = 8
-            self?.avatar.image = image
-            self?.avatar.isHidden = false
+        if let imageCache = loadImageCache(imageName: "\(episode.id)", imageFormat: .jpg) {
+            setImageAvatar(image: imageCache)
+        } else {
+            getImageNetwork(url: episode.image.medium) { [weak self] image in
+                self?.setImageAvatar(image: image)
+                saveImageCache(image: image, imageName: "\(episode.id)", imageFormat: .jpg)
+            }
         }
+    }
+
+    private func setImageAvatar(image: UIImage) {
+        avatar.image = image
+        avatar.layer.cornerRadius = 8
+        avatar.isHidden = false
     }
 
 }

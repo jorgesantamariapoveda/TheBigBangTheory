@@ -12,6 +12,8 @@
 		CF0C8B0525F1663500617621 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0425F1663500617621 /* FavoritesTableViewController.swift */; };
 		CF0C8B0925F169CE00617621 /* DetailEpisodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C8B0825F169CE00617621 /* DetailEpisodeTableViewController.swift */; };
 		CF38444825FE2924003E2F18 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38444725FE2924003E2F18 /* Network.swift */; };
+		CF38444E25FE2F29003E2F18 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38444D25FE2F29003E2F18 /* FileManager.swift */; };
+		CF38445125FE2FDB003E2F18 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38445025FE2FDB003E2F18 /* Enums.swift */; };
 		CFAE646225F038CA008107E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646125F038CA008107E5 /* AppDelegate.swift */; };
 		CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE646325F038CA008107E5 /* SceneDelegate.swift */; };
 		CFAE646925F038CA008107E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAE646725F038CA008107E5 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		CF0C8B0425F1663500617621 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		CF0C8B0825F169CE00617621 /* DetailEpisodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEpisodeTableViewController.swift; sourceTree = "<group>"; };
 		CF38444725FE2924003E2F18 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CF38444D25FE2F29003E2F18 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		CF38445025FE2FDB003E2F18 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CFAE645E25F038CA008107E5 /* BigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAE646125F038CA008107E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFAE646325F038CA008107E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		CF38444A25FE2934003E2F18 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				CF38445025FE2FDB003E2F18 /* Enums.swift */,
+				CF38444D25FE2F29003E2F18 /* FileManager.swift */,
 				CF38444725FE2924003E2F18 /* Network.swift */,
 			);
 			path = Util;
@@ -216,6 +222,8 @@
 				CFAE646425F038CA008107E5 /* SceneDelegate.swift in Sources */,
 				CF38444825FE2924003E2F18 /* Network.swift in Sources */,
 				CF0C8B0925F169CE00617621 /* DetailEpisodeTableViewController.swift in Sources */,
+				CF38445125FE2FDB003E2F18 /* Enums.swift in Sources */,
+				CF38444E25FE2F29003E2F18 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
