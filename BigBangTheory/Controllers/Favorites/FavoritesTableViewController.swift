@@ -38,10 +38,7 @@ final class FavoritesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellFavorite", for: indexPath)
 
         cell.textLabel?.text = "\(indexPath.row)"
-//        if let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) {
-//            cell.textLabel?.text = episode.name
-//            cell.detailTextLabel?.text = "Airdate: \(episode.airdate)"
-//        }
+        
         return cell
     }
 

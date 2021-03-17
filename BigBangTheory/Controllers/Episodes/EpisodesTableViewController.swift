@@ -60,8 +60,7 @@ final class EpisodesTableViewController: UITableViewController, UITabBarControll
             actionFavorite.backgroundColor = .blue
         }
 
-        let configuration = UISwipeActionsConfiguration(actions: [actionFavorite])
-        return configuration
+        return UISwipeActionsConfiguration(actions: [actionFavorite])
     }
 
     // MARK: - Navigation
