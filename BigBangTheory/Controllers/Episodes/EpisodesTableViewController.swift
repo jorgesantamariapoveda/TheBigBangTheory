@@ -42,6 +42,8 @@ final class EpisodesTableViewController: UITableViewController, UITabBarControll
         "Season \(section + 1)"
     }
 
+    // MARK: - UITableViewDelegate
+
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         guard let episode = model.getEpisode(season: indexPath.section + 1, episode: indexPath.row + 1) else {
             return nil
@@ -79,9 +81,8 @@ final class EpisodesTableViewController: UITableViewController, UITabBarControll
 
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if let navigation = viewController as? UINavigationController,
-           let top = navigation.topViewController as? FavoritesTableViewController {
-            top.refreshData()
+           let top = navigation.topViewController as? FavoritesCollectionViewController {
+            top.collectionView.reloadData()
         }
-
     }
 }

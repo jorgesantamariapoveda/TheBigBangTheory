@@ -42,15 +42,3 @@ func loadImageCache(imageName: String, imageFormat: ImageFormat) -> UIImage? {
     }
     return nil
 }
-
-// MARK: - Private functions
-
-private func convertUIImageToData(image: UIImage, imageFormat: ImageFormat, compressionQualityJPG: CGFloat = 1) -> Data? {
-    switch imageFormat {
-    case .jpg:
-        return image.jpegData(compressionQuality: compressionQualityJPG)
-    case .png:
-        return image.pngData()
-    }
-}
-
