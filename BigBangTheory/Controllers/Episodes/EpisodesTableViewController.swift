@@ -81,8 +81,8 @@ final class EpisodesTableViewController: UITableViewController, UITabBarControll
 
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if let navigation = viewController as? UINavigationController,
-           let top = navigation.topViewController as? FavoritesCollectionViewController {
-            top.collectionView.reloadData()
+           let top = navigation.topViewController as? FavoritesDiffableCollectionViewController {
+            top.setupData()
         }
     }
 }

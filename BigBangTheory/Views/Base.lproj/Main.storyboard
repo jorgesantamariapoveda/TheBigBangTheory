@@ -265,45 +265,53 @@
         <!--Favorites-->
         <scene sceneID="Axn-fW-5EE">
             <objects>
-                <collectionViewController id="QDk-iA-V0y" customClass="FavoritesCollectionViewController" customModule="BigBangTheory" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="QDk-iA-V0y" customClass="FavoritesDiffableCollectionViewController" customModule="BigBangTheory" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Y3o-Xr-x13">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Jfu-Y2-Gvb">
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Jfu-Y2-Gvb">
                             <size key="itemSize" width="100" height="100"/>
-                            <size key="estimatedItemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellFavorite" id="NgJ-Et-y4v" customClass="FavoriteCollectionViewCell" customModule="BigBangTheory" customModuleProvider="target">
-                                <rect key="frame" x="10" y="0.0" width="100" height="100"/>
+                                <rect key="frame" x="5" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CMx-GI-yTQ">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fua-vi-YNO">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fua-vi-YNO">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwL-wa-JUo">
-                                            <rect key="frame" x="33.666666666666664" y="64.333333333333329" width="32.999999999999993" height="15.666666666666671"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwL-wa-JUo">
+                                            <rect key="frame" x="34.666666666666664" y="77.666666666666671" width="30.999999999999993" height="14.333333333333329"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMu-Xf-LQ5">
+                                            <rect key="frame" x="73" y="8" width="19" height="22"/>
+                                            <state key="normal" image="trash.fill" catalog="system"/>
+                                            <connections>
+                                                <action selector="deleteFavoriteEpisode:" destination="NgJ-Et-y4v" eventType="touchUpInside" id="Gyw-nn-Da4"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="fua-vi-YNO" firstAttribute="top" secondItem="CMx-GI-yTQ" secondAttribute="top" id="1dP-i8-ZT7"/>
-                                        <constraint firstAttribute="bottom" secondItem="fua-vi-YNO" secondAttribute="bottom" id="54D-7i-vBm"/>
-                                        <constraint firstAttribute="trailing" secondItem="fua-vi-YNO" secondAttribute="trailing" id="NXT-HK-DeR"/>
+                                        <constraint firstAttribute="trailing" secondItem="fua-vi-YNO" secondAttribute="trailing" id="59X-4g-zbK"/>
+                                        <constraint firstAttribute="bottom" secondItem="fua-vi-YNO" secondAttribute="bottom" id="6AN-MS-0bp"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CwL-wa-JUo" secondAttribute="trailing" constant="4" id="7ai-B5-PMt"/>
+                                        <constraint firstItem="fua-vi-YNO" firstAttribute="top" secondItem="CMx-GI-yTQ" secondAttribute="top" id="B0c-FI-E6b"/>
+                                        <constraint firstItem="CwL-wa-JUo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CMx-GI-yTQ" secondAttribute="leading" constant="4" id="BCP-b2-jWD"/>
                                         <constraint firstItem="CwL-wa-JUo" firstAttribute="centerX" secondItem="CMx-GI-yTQ" secondAttribute="centerX" id="RAp-RR-lBa"/>
-                                        <constraint firstAttribute="bottom" secondItem="CwL-wa-JUo" secondAttribute="bottom" constant="20" symbolic="YES" id="aoP-dI-YNx"/>
-                                        <constraint firstItem="fua-vi-YNO" firstAttribute="height" secondItem="CMx-GI-yTQ" secondAttribute="height" id="ewT-OW-vDd"/>
-                                        <constraint firstItem="fua-vi-YNO" firstAttribute="leading" secondItem="CMx-GI-yTQ" secondAttribute="leading" id="pLy-3g-ZlQ"/>
-                                        <constraint firstItem="fua-vi-YNO" firstAttribute="width" secondItem="CMx-GI-yTQ" secondAttribute="width" id="vhu-Zz-gGG"/>
+                                        <constraint firstAttribute="bottom" secondItem="CwL-wa-JUo" secondAttribute="bottom" constant="8" id="aoP-dI-YNx"/>
+                                        <constraint firstItem="GMu-Xf-LQ5" firstAttribute="top" secondItem="CMx-GI-yTQ" secondAttribute="top" constant="8" id="k6b-9u-uyp"/>
+                                        <constraint firstItem="fua-vi-YNO" firstAttribute="leading" secondItem="CMx-GI-yTQ" secondAttribute="leading" id="kUB-57-pri"/>
+                                        <constraint firstAttribute="trailing" secondItem="GMu-Xf-LQ5" secondAttribute="trailing" constant="8" id="zBX-Km-btm"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <userDefinedRuntimeAttributes>
@@ -313,6 +321,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="avatar" destination="fua-vi-YNO" id="TEg-AZ-s8b"/>
+                                    <outlet property="deleteFavoriteEpisodeButton" destination="GMu-Xf-LQ5" id="Gwd-f3-rkn"/>
                                     <outlet property="nameEpisodeLabel" destination="CwL-wa-JUo" id="VzS-pQ-RMn"/>
                                 </connections>
                             </collectionViewCell>
@@ -373,6 +382,7 @@
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

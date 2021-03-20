@@ -37,7 +37,7 @@ struct BigBangModel {
 
     private var episodes: [Episode]
     private var numSeasons: Int?
-    private var idEpisodesFavorites:[Int] {
+    var idEpisodesFavorites:[Int] {
         didSet {
             saveFavorites()
         }
